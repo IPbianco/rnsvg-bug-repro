@@ -14,6 +14,10 @@
 		268A3316F937F96F28B3F05D /* libPods-CleanProject-CleanProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A223A44E6453CDF4A0BA5E /* libPods-CleanProject-CleanProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D86314C96C87FA560B95F06D /* libPods-CleanProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7A55F1D20BFE2E4A952050 /* libPods-CleanProject.a */; };
+		5718125B21F146E4A05568AC /* RyoGothicPlusN-EL.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9866B3770D844FFB03C78DA /* RyoGothicPlusN-EL.otf */; };
+		CD14419F25A4403AA5B0FEF1 /* RyoGothicPlusN-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB830328757A4ACFA90F0AAA /* RyoGothicPlusN-Heavy.otf */; };
+		6EDBC4ECC8254750A6000E8B /* RyoGothicPlusN-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29DFE56FED684B61BDCDBA64 /* RyoGothicPlusN-Light.otf */; };
+		97BAA778C7F748E7AD98395D /* RyoGothicPlusN-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527A0BC8EF8148E2B7A88AF5 /* RyoGothicPlusN-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CleanProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7AB5C7CC748470149DB3889 /* Pods-CleanProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanProject.release.xcconfig"; path = "Target Support Files/Pods-CleanProject/Pods-CleanProject.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		A9866B3770D844FFB03C78DA /* RyoGothicPlusN-EL.otf */ = {isa = PBXFileReference; name = "RyoGothicPlusN-EL.otf"; path = "../assets/fonts/RyoGothicPlusN-EL.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB830328757A4ACFA90F0AAA /* RyoGothicPlusN-Heavy.otf */ = {isa = PBXFileReference; name = "RyoGothicPlusN-Heavy.otf"; path = "../assets/fonts/RyoGothicPlusN-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		29DFE56FED684B61BDCDBA64 /* RyoGothicPlusN-Light.otf */ = {isa = PBXFileReference; name = "RyoGothicPlusN-Light.otf"; path = "../assets/fonts/RyoGothicPlusN-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		527A0BC8EF8148E2B7A88AF5 /* RyoGothicPlusN-Regular.otf */ = {isa = PBXFileReference; name = "RyoGothicPlusN-Regular.otf"; path = "../assets/fonts/RyoGothicPlusN-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				179CA37E411E7121BAD44758 /* Pods */,
+				03A9C76EF9264E9E8E81CE6B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -148,6 +157,18 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		03A9C76EF9264E9E8E81CE6B /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				A9866B3770D844FFB03C78DA /* RyoGothicPlusN-EL.otf */,
+				FB830328757A4ACFA90F0AAA /* RyoGothicPlusN-Heavy.otf */,
+				29DFE56FED684B61BDCDBA64 /* RyoGothicPlusN-Light.otf */,
+				527A0BC8EF8148E2B7A88AF5 /* RyoGothicPlusN-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +266,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5718125B21F146E4A05568AC /* RyoGothicPlusN-EL.otf in Resources */,
+				CD14419F25A4403AA5B0FEF1 /* RyoGothicPlusN-Heavy.otf in Resources */,
+				6EDBC4ECC8254750A6000E8B /* RyoGothicPlusN-Light.otf in Resources */,
+				97BAA778C7F748E7AD98395D /* RyoGothicPlusN-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

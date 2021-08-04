@@ -36,7 +36,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -51,5 +51,12 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RyoGothicPlusN-EL.otf</string>
+		<string>RyoGothicPlusN-Heavy.otf</string>
+		<string>RyoGothicPlusN-Light.otf</string>
+		<string>RyoGothicPlusN-Regular.otf</string>
+	</array>
 </dict>
 </plist>
