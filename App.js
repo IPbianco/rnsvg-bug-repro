@@ -8,104 +8,104 @@
 
 import React from 'react';
 import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {Svg, Text as SvgText} from 'react-native-svg';
 
 const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+    <SafeAreaView>
+      <View style={styles.normalTextSection}>
+        <Text style={styles.title}>******** React Native Text ********</Text>
+        <Text style={[styles.text, {fontFamily: 'RyoGothicPlusN-EL'}]}>
+          RyoGothicPlusN-EL
+        </Text>
+        <Text style={[styles.text, {fontFamily: 'RyoGothicPlusN-Light'}]}>
+          RyoGothicPlusN-Light
+        </Text>
+        <Text style={[styles.text, {fontFamily: 'RyoGothicPlusN-Regular'}]}>
+          RyoGothicPlusN-Regular
+        </Text>
+        <Text style={[styles.text, {fontFamily: 'RyoGothicPlusN-Heavy'}]}>
+          RyoGothicPlusN-Heavy
+        </Text>
+        <Text style={[styles.text, {fontFamily: 'RyoGothicPlusN-Regular'}]}>
+          November
+        </Text>
+      </View>
+      <View style={styles.svgTextSection}>
+        <Text style={styles.title}>******** SVG Text ********</Text>
+        <Svg height="60" width="400">
+          <SvgText
+            fill="black"
+            x="20"
+            y="50"
+            fontSize={20}
+            fontFamily="RyoGothicPlusN-EL">
+            RyoGothicPlusN-EL
+          </SvgText>
+        </Svg>
+        <Svg height="60" width="400">
+          <SvgText
+            fill="black"
+            x="20"
+            y="50"
+            fontSize={20}
+            fontFamily="RyoGothicPlusN-Light">
+            RyoGothicPlusN-Light
+          </SvgText>
+        </Svg>
+        <Svg height="60" width="400">
+          <SvgText
+            fill="black"
+            x="20"
+            y="50"
+            fontSize={20}
+            fontFamily="RyoGothicPlusN-Regular">
+            RyoGothicPlusN-Regular
+          </SvgText>
+        </Svg>
+        <Svg height="60" width="400">
+          <SvgText
+            fill="black"
+            x="20"
+            y="50"
+            fontSize={20}
+            fontFamily="RyoGothicPlusN-Heavy">
+            RyoGothicPlusN-Heavy
+          </SvgText>
+        </Svg>
+        <Svg height="60" width="400">
+          <SvgText
+            fill="black"
+            x="20"
+            y="50"
+            fontSize={20}
+            fontFamily="RyoGothicPlusN-Regular">
+            November
+          </SvgText>
+        </Svg>
+      </View>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  title: {
+    color: 'green',
+    paddingLeft: 20,
+    fontSize: 20,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  normalTextSection: {
+    marginTop: 40,
+    alignItems: 'flex-start',
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
+  svgTextSection: {
+    marginTop: 10,
+    alignItems: 'flex-start',
   },
-  highlight: {
-    fontWeight: '700',
+  text: {
+    padding: 20,
+    fontSize: 20,
   },
 });
 
